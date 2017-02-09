@@ -25,8 +25,12 @@ TEMPLATE_TOP=$(EPICS_BASE)/templates/makeBaseApp/top
 #SNCSEQ=$(EPICS_BASE)/../modules/soft/seq
 
 # EPICS_BASE usually appears last so other apps can override stuff:
-EPICS_BASE=/usr/lib/epics
+EPICS_BASE=/usr/local/Cellar/epics-base/3.14.12.5
 
 # Set RULES here if you want to take build rules from somewhere
 # other than EPICS_BASE:
 #RULES=/path/to/epics/support/module/rules/x-y
+MOTOR=/usr/local/Cellar/epics-motor/6-9
+ASYN=/usr/local/Cellar/epics-asyn/4-30
+CALC=/usr/local/Cellar/epics-calc/3-6-1
+AUTOSAVE=/usr/local/Cellar/epics-autosave/5-7-1
