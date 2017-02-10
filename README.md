@@ -1,6 +1,12 @@
 # OSX instructions
 
 * Install [homebrew-epics](https://github.com/klauer/homebrew-epics/).
+
+```
+brew tap klauer/homebrew-epics
+brew install epics-motor epics-autosave epics-calc
+```
+
 * Run ``source /usr/local/Cellar/epics-base/3.14.12.5/bin/epics_env.sh``
 
 ```
@@ -8,7 +14,7 @@ cd motorsim
 make
 cd iocBoot/ioclocalhost
 make
-./std.cmd
+./st.cmd
 ```
 
 Troubleshooting
