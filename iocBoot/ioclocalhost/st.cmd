@@ -16,7 +16,7 @@ dbLoadTemplate("db/motorSim.substitutions")
 dbLoadRecords("db/fakemotor.db", "Sys=XF:31IDA-OP,Dev={Tbl-Ax:FakeMtr},Mtr=XF:31IDA-OP{Tbl-Ax:X1}Mtr")
 
 # Create simulated motors: ( start card , start axis , low limit, high limit, home posn, # cards, # axes to setup)
-motorSimCreate( 0, 0, -32000, 32000, 0, 1, 6 )
+motorSimCreate( 0, 0, -32000, 32000, 0, 1, 8 )
 # Setup the Asyn layer (portname, low-level driver drvet name, card, number of axes on card)
 drvAsynMotorConfigure("motorSim1", "motorSim", 0, 6)
 
