@@ -19,7 +19,6 @@ mtrSim_DBD += base.dbd
 mtrSim_DBD += asyn.dbd
 mtrSim_DBD += motorSupport.dbd
 mtrSim_DBD += devSoftMotor.dbd
-mtrSim_DBD += motorRecord.dbd
 mtrSim_DBD += motorSimSupport.dbd
 mtrSim_DBD += asSupport.dbd
 mtrSim_DBD += calcSupport.dbd
