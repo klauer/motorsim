@@ -1,4 +1,4 @@
-#!../../bin/linux-x86_64/mtrSim
+#!../../bin/darwin-x86/mtrSim
 
 ## You may have to change motorSim to something else
 ## everywhere it appears in this file
@@ -15,10 +15,15 @@ dbLoadTemplate("db/sensor.substitutions")
 dbLoadTemplate("db/motorSim.substitutions")
 dbLoadRecords("db/fakemotor.db", "Sys=XF:31IDA-OP,Dev={Tbl-Ax:FakeMtr},Mtr=XF:31IDA-OP{Tbl-Ax:X1}Mtr")
 
-# Create simulated motors: ( start card , start axis , low limit, high limit, home posn, # cards, # axes to setup)
-motorSimCreate( 0, 0, -32000, 32000, 0, 1, 6 )
-# Setup the Asyn layer (portname, low-level driver drvet name, card, number of axes on card)
-drvAsynMotorConfigure("motorSim1", "motorSim", 0, 6)
+motorSimCreateController("motorSim1", 8)
+motorSimConfigAxis("motorSim1", 0, 20000, -20000,  500, 0)
+motorSimConfigAxis("motorSim1", 1, 20000, -20000, 1500, 0)
+motorSimConfigAxis("motorSim1", 2, 20000, -20000, 2500, 0)
+motorSimConfigAxis("motorSim1", 3, 20000, -20000, 3000, 0)
+motorSimConfigAxis("motorSim1", 4, 20000, -20000,  500, 0)
+motorSimConfigAxis("motorSim1", 5, 20000, -20000, 1500, 0)
+motorSimConfigAxis("motorSim1", 6, 20000, -20000, 2500, 0)
+motorSimConfigAxis("motorSim1", 7, 20000, -20000, 3000, 0)
 
 ## autosave/restore machinery
 save_restoreSet_Debug(0)
@@ -40,4 +45,3 @@ cd ${TOP}/as/req
 makeAutosaveFiles()
 create_monitor_set("info_positions.req", 5 , "")
 create_monitor_set("info_settings.req", 15 , "")
-

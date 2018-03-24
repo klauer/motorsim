@@ -35,3 +35,8 @@ record(bi, "$(Sys)$(Dev)Sts:Moving-Sts") {
     field(ZNAM, "Moving")
     field(ONAM, "Done")
 }
+
+record(waveform, "$(Sys)$(Dev)Wf") {
+    field(FTVL, "DOUBLE")
+    field(NELM, "100")
+}
