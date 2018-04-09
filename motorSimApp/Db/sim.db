@@ -1,0 +1,3 @@
+record(ai, "$(P)EXCTTNADCM") {
+    field(VAL, "5.0")
+}

@@ -3,11 +3,39 @@ file "db/sensor.db"
 
 pattern
 {SYS,		       DEV,	        MEAN,       MSYS,            MDEV }
-{XF:31IDA-BI,  "{Dev:1}E-I",	1.5,    XF:31IDA-OP,    "{Tbl-Ax:X1}Mtr"}
-{XF:31IDA-BI,  "{Dev:2}E-I",	0.5,    XF:31IDA-OP,    "{Tbl-Ax:X2}Mtr"}
-{XF:31IDA-BI,  "{Dev:3}E-I",    -0.5,    XF:31IDA-OP,    "{Tbl-Ax:X3}Mtr"}
-{XF:31IDA-BI,  "{Dev:4}E-I",    -1.5,    XF:31IDA-OP,    "{Tbl-Ax:X4}Mtr"}
-{XF:31IDA-BI,  "{Dev:5}E-I",    -2.5,    XF:31IDA-OP,    "{Tbl-Ax:X5}Mtr"}
-{XF:31IDA-BI,  "{Dev:6}E-I",    -1.0,    XF:31IDA-OP,    "{Tbl-Ax:X6}Mtr"}
+{camsim:,  "CM1ADCM",	1.5,      camsim:,    "CM1MOTOR"}
+{camsim:,  "CM2ADCM",	0.5,      camsim:,    "CM2MOTOR"}
+{camsim:,  "CM3ADCM",    -0.5,    camsim:,    "CM3MOTOR"}
+{camsim:,  "CM4ADCM",    -1.5,    camsim:,    "CM4MOTOR"}
+{camsim:,  "CM5ADCM",    -2.5,    camsim:,    "CM5MOTOR"}
+{camsim:,  "CM6ADCM",    -1.0,    camsim:,    "CM6MOTOR"}
 
+{camsim:,  "LP1ADCM",	1.5,      camsim:,    "CM1MOTOR"}
+{camsim:,  "LP2ADCM",	0.5,      camsim:,    "CM2MOTOR"}
+{camsim:,  "LP3ADCM",    -0.5,    camsim:,    "CM3MOTOR"}
+{camsim:,  "LP4ADCM",    -0.5,    camsim:,    "CM3MOTOR"}
+{camsim:,  "LP5ADCM",    -1.5,    camsim:,    "CM4MOTOR"}
+{camsim:,  "LP6ADCM",    -2.5,    camsim:,    "CM5MOTOR"}
+{camsim:,  "LP7ADCM",    -1.0,    camsim:,    "CM6MOTOR"}
+
+{camsim:,  "CM1READDEG",	1.5,      camsim:,    "CM1MOTOR"}
+{camsim:,  "CM2READDEG",	0.5,      camsim:,    "CM2MOTOR"}
+{camsim:,  "CM3READDEG",    -0.5,    camsim:,    "CM3MOTOR"}
+{camsim:,  "CM4READDEG",    -1.5,    camsim:,    "CM4MOTOR"}
+{camsim:,  "CM5READDEG",    -2.5,    camsim:,    "CM5MOTOR"}
+{camsim:,  "CM6READDEG",    -1.0,    camsim:,    "CM6MOTOR"}
+
+{camsim:,  "CM1GAINC",	1.5,      camsim:,    "CM1MOTOR"}
+{camsim:,  "CM2GAINC",	0.5,      camsim:,    "CM2MOTOR"}
+{camsim:,  "CM3GAINC",    -0.5,    camsim:,    "CM3MOTOR"}
+{camsim:,  "CM4GAINC",    -1.5,    camsim:,    "CM4MOTOR"}
+{camsim:,  "CM5GAINC",    -2.5,    camsim:,    "CM5MOTOR"}
+{camsim:,  "CM6GAINC",    -1.0,    camsim:,    "CM6MOTOR"}
+
+{camsim:,  "CM1OFFSETC",	1.5,      camsim:,    "CM1MOTOR"}
+{camsim:,  "CM2OFFSETC",	0.5,      camsim:,    "CM2MOTOR"}
+{camsim:,  "CM3OFFSETC",    -0.5,    camsim:,    "CM3MOTOR"}
+{camsim:,  "CM4OFFSETC",    -1.5,    camsim:,    "CM4MOTOR"}
+{camsim:,  "CM5OFFSETC",    -2.5,    camsim:,    "CM5MOTOR"}
+{camsim:,  "CM6OFFSETC",    -1.0,    camsim:,    "CM6MOTOR"}
 }

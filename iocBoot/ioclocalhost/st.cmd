@@ -13,7 +13,8 @@ mtrSim_registerRecordDeviceDriver(pdbbase)
 ## Load record instances
 dbLoadTemplate("db/sensor.substitutions")
 dbLoadTemplate("db/motorSim.substitutions")
-dbLoadRecords("db/fakemotor.db", "Sys=XF:31IDA-OP,Dev={Tbl-Ax:FakeMtr},Mtr=XF:31IDA-OP{Tbl-Ax:X1}Mtr")
+# dbLoadRecords("db/fakemotor.db", "Sys=XF:31IDA-OP,Dev={Tbl-Ax:FakeMtr},Mtr=XF:31IDA-OP{Tbl-Ax:X1}Mtr")
+dbLoadRecords("db/sim.db", "P=camsim:")
 
 motorSimCreateController("motorSim1", 8)
 motorSimConfigAxis("motorSim1", 0, 20000, -20000,  500, 0)
